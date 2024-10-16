@@ -1,0 +1,92 @@
+.fixedMenu{
+    border: 1px solid none;
+    height: 100px;
+    position: fixed;
+    /* background-color: rgba(58, 146, 138, .1); */
+    top: 0px;
+    z-index: 999;
+}
+
+.name{
+    position: fixed;
+    left: 3%;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 3em;
+    color: #3A928A;
+    font-weight: 500;
+    font-family: cursive;/*  Brush Script,Didot,Monaco*/
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s,
+    cursur .4s step-end infinite alternate
+  }
+
+  @keyframes cursor{
+    50% {border-color:transparent;}
+  }
+  @keyframes typing {
+    from{width: 0;}
+  }
+.navIconDiv{
+    position: fixed;
+    right: 2%;
+    padding-top: 30px;
+    /* padding-right: 84px; */
+    /* width: fit-content; */
+    z-index: 1000;
+}
+
+@media (max-width:992px){
+    .navIconDiv{
+        left: 84%;
+        z-index: 1000
+    }
+}
+
+@media (max-width:500px) {
+    .navIconDiv{
+        left: 70%;
+        z-index: 1000
+    }
+    .name{
+        font-size: 2em;
+        left: 0%;
+    }
+    .fixedMenu{
+        height: 80px;
+        background-color: rgba(58, 146, 138, .1);
+    }
+}
+@media (max-width>900px) {
+    .navIconDiv{
+        left: 70%;
+        z-index: 1000
+    }
+    .name{
+        font-size: 2em;
+        left: 0%;
+    }
+    .fixedMenu{
+        height: 80px;
+        background-color: rgba(58, 146, 138, .1);
+    }
+
+}
+@media (max-width: 1500px){ 
+    .name{
+        font-size: 2em;
+        left: 2%;
+    }
+}
+ @media (max-width:500px) {
+    .fixedMenu{
+        border: 1px solid none;
+        height: 80px;
+        position: fixed;
+        /* background-color: rgba(58, 146, 138, .1); */
+        top: 0px;
+        z-index: 999;
+    }
+    
+}

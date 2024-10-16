@@ -1,0 +1,14 @@
+.GITContainer{
+     background-color: #0A192F;
+     height: 40vh;
+}
+@media (max-width:500px){
+    .GITContainer{
+    height: 45vh;
+    }
+}
+@media (max-width:1536px){
+    .GITContainer{
+        height: 45vh; 
+    }
+}

@@ -1,0 +1,43 @@
+.itemContainerExperience{
+    height: 35vh;
+    width: 470px;
+    /* background-color: rgba(240, 240, 240, 0.2); */
+    display: flex;
+    place-content: center space-around; /* instead of justifyContent: "space-around",alignContent: "center",*/
+    flex-wrap: wrap;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 2s;
+}
+.itemContainerExperience.show{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.imgStyle{
+    width: 80px;
+    height: 100px;
+    margin-top:10px;
+}
+.imgStyle:hover{
+    transform: rotateX(30deg);
+    transition: 1s;
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .imgStyle{
+        width: 50px;
+        height: 68px;
+        margin-top:10px;
+    }
+    .itemContainerExperience{
+        height: 26vh;
+        width: 300px;
+    }
+}
+
+@media (max-width:1536px){
+    .itemContainerExperience{
+        height: 26vh;
+    }
+}

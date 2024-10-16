@@ -1,0 +1,14 @@
+.footerContainer{
+    background-color: #3A928A;
+    height: 30vh;
+}
+@media (max-width:500px){
+    .footerContainer{
+        height: 30vh;        
+    }
+}
+@media (max-width:1536px){
+    .footerContainer{
+        height: 33vh;
+    }
+}
